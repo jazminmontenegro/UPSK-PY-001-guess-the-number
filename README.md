@@ -3,10 +3,7 @@
 ## Índice
 
 - [1. Resumen del Proyecto](#1-resumen-del-proyecto)
-- [2. Consideraciones Generales](#2-consideraciones-generales)
-- [3. Objetivos de Aprendizaje](#3-objetivos-de-aprendizaje)
 
----
 
 ![GUESS THE
 NUMBER](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/guess-the-number.png?alt=media)
@@ -20,242 +17,54 @@ aleatorio entre 1 y 100. Deben tener en cuenta la tentativa anterior, si fue
 
 ![Demostración animada de sesión de juego](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/guess-the-number-demo.gif?alt=media)
 
-## 2. Consideraciones Generales
+## 2. Introducion de proyecto 
 
-- Este proyecto debe desarrollarse de manera **individual**.
-- La estimación de tiempo para completar el proyecto es de 1 a 2 Sprints.
-- Concéntrate en adquirir conocimientos en lugar de simplemente "terminar" el
-  proyecto.
-- Ten paciencia. No te preocupes demasiado por lo que aún no entiendes
-  completamente.
-- Tu aprendizaje se desarrollará a medida que progreses.
 
-### **Criterios de Aceptación Mínimos del Proyecto**
+Este proyecto tiene como objetivo la creación de un juego de adivinanzas de números en el que los participantes son el ordenador y un jugador. La implementación se realizará utilizando el lenguaje de programación Python, y se empleará el módulo unittest para la realización de pruebas.
 
-- La jugadora y el ordenador se turnarán en turnos para intentar adivinar el
-  número.
-- Después de cada tentativa, se debe mostrar:
-  * El nombre del jugador (persona o computadora).
-  * La suposición realizada.
-  * Un mensaje indicando si la suposición fue muy alta, muy baja o correcta.
-- El juego terminará tan pronto como la jugadora o el ordenador adivine el
-  número secreto. Debe mostrarse un mensaje de fin de juego, así como una lista
-  de todas las tentativas realizadas por la jugadora ganadora.
+El juego se desarrollará en el entorno de la terminal, ofreciendo una experiencia interactiva para el usuario. La dinámica del juego consistirá en turnos alternados entre el jugador y el ordenador, donde cada participante intentará adivinar un número secreto generado aleatoriamente entre 1 y 100.
 
-**_¡Diviértete construyendo tu juego de adivinanza de números! 🎲🎮_**
+A lo largo del juego, se proporcionará información clave después de cada intento, indicando si la suposición fue correcta o brindando pistas sobre la relación entre la suposición y el número secreto.
 
-- [Versión en Python](./docs/README-python.md)
-- [Versión en Java](./docs/README-java.md)
+## 3. Implementación del Juego
 
-## 3. Objetivos de Aprendizaje
+- Generar un número aleatorio entre 1 y 100.
+- Implementar un bucle que solicite a la jugadora adivinar el número.
+- Comparar la entrada de la jugadora con el número secreto y proporcionar pistas.
+- Implementar la lógica para el turno del ordenador.
+- Llevar un registro de las suposiciones de la jugadora y del ordenador.
+- Agregar la opción de jugar de nuevo.
+- Añadir comentarios al código para mejorar la legibilidad
 
 
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
+# 4. Diagrama de Flujo
 
-### Java
+He diseñado un diagrama de flujo detallado para proporcionar una representación visual clara de cómo se 
+lleva a cabo cada proceso en nuestro proyecto. Este diagrama de flujo tiene como objetivo facilitar la comprensión 
+del ciclo de vida del proyecto y la interconexión entre diferentes etapas.
 
-- [ ] **Modificadores de acesso (public, private, protected)**
+![Diagrama de flujo](img/img_2.png)
 
-- [ ] **Uso de condicionales**
+# 5. Guess the Number
 
-- [ ] **Uso de bucles (Loops)**
+- Esta es la pantalla inicial que se presenta al iniciar el juego.
 
-#### Tipos de data
+![Juega ahora ](img/img_1.png)
 
-- [ ] **Datos primitivos vs no primitivos**
+- Después de que un juego concluye, se da la opción de volver a jugar.
+- Opciones "Y" (sí) y "N" (no) para indicar la decisión del jugador.
 
-- [ ] **Cadenas**
 
-- [ ] **Arreglos**
+![Quieres volver a jugar ](img/img_3.png)
 
-#### Colecciones
+- Si el jugador decide no continuar, se muestra un mensaje de despedida y se termina el juego.
 
-- [ ] **ArrayList**
+![alt text](img/img_4.png)
 
-#### Testing
+Estas vistas previas proporcionan una visión clara de las diferentes fases del juego, desde el inicio hasta la decisión de continuar o finalizar. Cada imagen está acompañada de elementos clave que guiarán al jugador a través de la experiencia de juego.
 
-- [ ] **JUnit**
+## 5. Testing 
 
-- [ ] **Mockito**
+Para garantizar que cada aspecto del juego funcione de manera precisa y consistente, he implementado pruebas unitarias utilizando el sólido módulo unittest de Python.
 
-### Programación Orientada a Objetos (OOP)
-
-- [ ] **Clases**
-
-- [ ] **Objetos**
-
-- [ ] **Métodos**
-
-- [ ] **Atributos**
-
-- [ ] **Constructores**
-
-- [ ] **Encapsulamiento**
-
-- [ ] **Abstracción**
-
-- [ ] **Composición**
-
-- [ ] **Interfaces**
-
-- [ ] **Herencia (super, extends, override)**
-
-- [ ] **Lenguaje de Modelado Unificado (UML, class diagrams)**
-
-### Python
-
-- [ ] **Variables (declaración, asignación, ámbito)**
-
-  <details><summary>Links</summary><p>
-
-  * [Variables in Python – Real Python (en inglés)](https://realpython.com/python-variables/)
-  * [Variables in Python - GeeksforGeeks (en inglés)](https://www.geeksforgeeks.org/python-variables/)
-</p></details>
-
-- [ ] **Uso de condicionales (if, elif, ternario)**
-
-  <details><summary>Links</summary><p>
-
-  * [Conditional Statements in Python – Real Python (en inglés)](https://realpython.com/python-conditional-statements/)
-</p></details>
-
-- [ ] **Operadores (identidad, aritméticos, comparación etc)**
-
-  <details><summary>Links</summary><p>
-
-  * [Python Operators - GeeksforGeeks (en inglés)](https://www.geeksforgeeks.org/python-operators/)
-</p></details>
-
-- [ ] **Docstrings (y su diferencia de comentarios)**
-
-  <details><summary>Links</summary><p>
-
-  * [Docstrings - Python Docs (en inglés)](https://docs.python.org/3/tutorial/controlflow.html#documentation-strings)
-</p></details>
-
-- [ ] **Linting (pylint)**
-
-  <details><summary>Links</summary><p>
-
-  * [Pylint - Documentación oficial](https://pylint.pycqa.org/en/latest/)
-  * [Linting Python in Visual Studio Code - Visual Studio Code Docs (en inglés)](https://code.visualstudio.com/docs/python/linting)
-</p></details>
-
-#### Tipos de datos
-
-- [ ] **Tipos de datos primitivos (int, float, str, bool)**
-
-  <details><summary>Links</summary><p>
-
-  * [Data Types - Python Docs (en inglés)](https://docs.python.org/3/library/datatypes.html)
-  * [Data types in Python (en inglés)](https://www.educative.io/answers/data-types-in-python)
-</p></details>
-
-- [ ] **Listas (arrays)**
-
-  <details><summary>Links</summary><p>
-
-  * [Lists - Python Docs (en inglés)](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
-  * [Lists and Tuples in Python - Real Python (en inglés)](https://realpython.com/python-lists-tuples/)
-</p></details>
-
-- [ ] **Tuples**
-
-  <details><summary>Links</summary><p>
-
-  * [Tuples - Python Docs (en inglés)](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
-  * [Lists and Tuples in Python - Real Python (en inglés)](https://realpython.com/python-lists-tuples/)
-</p></details>
-
-- [ ] **Dictionaries (Dicts)**
-
-  <details><summary>Links</summary><p>
-
-  * [Dictionaries - Python Docs (en inglés)](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
-  * [Dictionaries in Python - Real Python (en inglés)](https://realpython.com/python-dicts/)
-</p></details>
-
-- [ ] **Sets**
-
-  <details><summary>Links</summary><p>
-
-  * [Sets - Python Docs (en inglés)](https://docs.python.org/3/tutorial/datastructures.html#sets)
-  * [Sets in Python - Real Python (en inglés)](https://realpython.com/python-sets/)
-</p></details>
-
-#### Funciones
-
-- [ ] **Conceptos basicos (params, args, default values, return)**
-
-  <details><summary>Links</summary><p>
-
-  * [Python Functions - GeeksforGeeks (en ingles)](https://www.geeksforgeeks.org/python-functions/)
-</p></details>
-
-#### Iteración
-
-- [ ] **Uso de bucles/ciclos (while, for..in)**
-
-  <details><summary>Links</summary><p>
-
-  * [Loops in Python - For, While and Nested Loops - GeeksforGeeks](https://www.geeksforgeeks.org/loops-in-python/)
-  * [Loops - Learn Python - Free Interactive Python Tutorial](https://www.learnpython.org/en/Loops)
-</p></details>
-
-#### Testing en Python
-
-- [ ] **Pruebas unitarias (unit tests, unittest, pytest)**
-
-  <details><summary>Links</summary><p>
-
-  * [unittest - Python Docs (en inglés)](https://docs.python.org/3/library/unittest.html)
-  * [pytest - Documentación oficial](https://docs.pytest.org/en/6.2.x/)
-</p></details>
-
-- [ ] **Uso de mocks (y patch)**
-
-  <details><summary>Links</summary><p>
-
-  * [unittest.mock - Python Docs (en inglés)](https://docs.python.org/3/library/unittest.mock.html)
-  * [Python Mock Library - Real Python (en inglés)](https://realpython.com/python-mock-library/)
-</p></details>
-
-- [ ] **Uso de fixtures**
-
-  <details><summary>Links</summary><p>
-
-  * [pytest fixtures - Documentación oficial](https://docs.pytest.org/en/6.2.x/fixture.html)
-</p></details>
-
-#### Modularización
-
-- [ ] **Módulos**
-
-  <details><summary>Links</summary><p>
-
-  * [Módulos - Python Docs (en inglés)](https://docs.python.org/3/tutorial/modules.html)
-</p></details>
-
-#### Manejo de dependencias
-
-- [ ] **pip (instalación y uso de paquetes)**
-
-  <details><summary>Links</summary><p>
-
-  * [pip - Python Docs (en inglés)](https://docs.python.org/3/installing/index.html)
-</p></details>
-
-- [ ] **Virtual Environment (ambientes virtuales, virtualenv)**
-
-  <details><summary>Links</summary><p>
-
-  * [venv — Creation of virtual environments — Python 3.12.2 documentation (en inglés)](https://docs.python.org/3/library/venv.html)
-  * [Python Virtual Environments: A Primer – Real Python (en inglés)](https://realpython.com/python-virtual-environments-a-primer/)
-</p></details>
-
-- [ ] **requirements.txt**
-
-  <details><summary>Links</summary><p>
-
-  * [requirements.txt - Documentación oficial](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
-</p></details>
+![Testing](img/img_5.png)
